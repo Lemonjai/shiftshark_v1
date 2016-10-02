@@ -1,0 +1,26 @@
+html,body{
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+
+  .top_vertical{
+    vertical-align: top;
+  }
+
+  .display-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .display-table-row{
+    display: table-row;
+    height: 100%;
+  }
+
+  .display-table-cell{
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+
+}
