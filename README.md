@@ -1,24 +1,27 @@
-# README
+Deployment Steps:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Making sure Rails 5.0 is installed and Ruby 2.3 ++
+2. Go to the terminal:
+          Bundle Install
+          Rake db:create
+          Rake db:migrate
+3. Localhost:3000 <--- default port for the rails application
 
-Things you may want to cover:
 
-* Ruby version
+Items:
+1. Adding the calendar [Completed]
+2. User signup/login [Functional]
+3. Able to add workplace [Completed]
+4. Add the model associated with each other [Completed]
 
-* System dependencies
+Tasks:
+1. Need to display only event with current user sign in
+2. Need to generate the invoices
+3. Need to redirect the users when certain certia isn't met
 
-* Configuration
 
-* Database creation
+ShiftShark V1:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bootstrap was used for the styling
+FullCalendar was used for the generation of the calendar
+Devise was used for user authenication
