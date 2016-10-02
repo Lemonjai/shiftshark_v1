@@ -10,9 +10,11 @@
 
   <body>
 
-    <% if !current_page?(user_session_path) && !current_page?(new_user_registration_path) %>
+    <% if !current_page?(user_session_path) && !current_page?(new_user_registration_path) && !user_signed_in? %>
       <%= render 'welcome/navbar' %>
       <%= render 'welcome/content' %>
+    <% elsif !current_page?(user_session_path) && !current_page?(new_user_registration_path) %>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
     <% end %>
       <%= yield %>
   </body>
