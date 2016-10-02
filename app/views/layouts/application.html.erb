@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <% if !current_page?(user_session_path) && !current_page?(new_user_registration_path) %>
+      <%= render 'welcome/navbar' %>
+      <%= render 'welcome/content' %>
+    <% end %>
+      <%= yield %>
   </body>
 </html>
